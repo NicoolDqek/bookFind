@@ -1,0 +1,33 @@
+[
+  {
+    "nombre": "Fantasía",
+    "imgUrl": "https://as1.ftcdn.net/v2/jpg/05/62/55/36/1000_F_562553668_kJZgRyyYrQKGIaIDwLrVZAKCioP9nSSv.jpg",
+    "descripcion": "Historias mágicas, mundos imaginarios y criaturas extraordinarias."
+  },
+  {
+    "nombre": "Sci-fi",
+    "imgUrl": "https://utopiasposcapitalistas.com/wp-content/uploads/2020/05/img_0390.jpg?w=1024",
+    "descripcion": "Explora el futuro, la tecnología y los viajes espaciales."
+  },
+  {
+    "nombre": "Misterio",
+    "imgUrl": "https://i.pinimg.com/736x/84/81/29/8481296681443e811236fcd3b5a3c904.jpg",
+    "descripcion": "Crímenes, detectives y secretos por descubrir."
+  },
+  {
+    "nombre": "Romance",
+    "imgUrl": "https://i.pinimg.com/736x/d0/76/bb/d076bbd1da6e92fc4d1fb2dd917d9076.jpg",
+    "descripcion": "Relaciones amorosas y emociones intensas."
+  },
+  {
+    "nombre": "Terror",
+    "imgUrl": "https://i.pinimg.com/736x/25/7a/75/257a75668d0e748ed3149422d935cd2a.jpg",
+    "descripcion": "Suspenso, miedo y lo sobrenatural."
+  },
+
+  {
+    "nombre": "Aventura",
+    "imgUrl": "https://i.pinimg.com/1200x/20/6f/cb/206fcba6219311c573c7e5f777ae3997.jpg",
+    "descripcion": "Viajes, descubrimientos y acción constante."
+  }
+]

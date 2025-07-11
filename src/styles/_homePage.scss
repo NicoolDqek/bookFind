@@ -1,0 +1,270 @@
+
+.navbar{
+    background-color: white;
+    padding: .5rem  3rem;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    
+input{
+    width: 500px;
+    padding: 1rem;
+    background-color: rgb(242, 253, 253);
+}
+    button{
+        border: none;
+        background-color: rgb(92, 200, 200);
+        color: white;
+    &:hover{
+        background-color: $azul;
+    }
+    }
+   
+
+    input{
+        border: none;
+    }
+}
+
+.link-navbar{
+    li{
+        margin: 0 30px;
+        transition: .7s ease-in-out ;
+        padding:  .5rem 0;
+        border-radius: 10px;
+&:hover{
+    background-color: rgb(122, 216, 219);
+    color: white;
+  
+}
+        a{
+            font-family: $sans_font;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.section_books{
+    margin-top: 3rem;
+    
+   
+ h1{
+font-family: $abril-font;
+letter-spacing: 3px; 
+padding: 1rem 2rem;
+
+
+ }  
+.row{
+     display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: .5rem 0;  
+}
+.card{
+ width: 180px;
+ height: min-content;
+ border: none;
+ padding: 16px;
+ transition: .5s ease-in;
+
+   &:hover{
+        background-color:$gris;
+    }
+ img{
+    height:200px;
+    transition: .4s ease-in-out;
+    border-radius: 10px;
+
+    &:hover{
+        scale: 1.1;
+    }
+
+ }
+
+.titulo{
+     
+     font-size: 15px;
+     color:$negro;
+     font-family: $abril-font;
+     padding: 5px;
+     margin-top: 5px;
+
+
+    }
+
+.card-b{
+    height: 100px;
+    
+
+  
+}
+
+p{
+        margin-top:0;
+        font-family: $sans_font; 
+        font-size: 12px;
+
+        b{
+            font-size: 13px;
+        
+        }
+    }
+}
+
+}
+.header{
+    background-image: url('https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    border-radius: 0;
+
+   
+}
+
+// gender section
+
+
+.genders {
+    margin-top: 2rem;
+    padding: 0 4rem;
+ 
+   h1{
+    font-family: $abril-font;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+   }
+    img{
+        height: 70%;
+        width: 100%;
+        border-radius: 10px;
+        filter:grayscale(100%);
+        transition: .4s ease-in;
+        &:hover{
+        filter: none;
+
+  }
+    }
+    .gh{
+        position: relative;
+        &:hover img {
+      filter: none;
+      
+    }
+    }
+
+    .info-card {
+  position: absolute;
+  top: 0;
+  font-family:$abril-font;
+   text-align: center;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   
+   justify-content: center;
+ 
+   width: 100%;
+   height: 70%;
+   transition: .6s ease-in-out;
+   &:hover{
+    scale: 1.2;
+   }
+
+ 
+ h3{
+        color: white;
+        font-size: 19px;
+  
+    }
+
+    }
+
+    
+}
+
+// Banner
+
+.banner {
+    position: relative;
+    height: 40vh;
+    background-color: aquamarine; 
+    overflow: hidden;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('https://images.unsplash.com/photo-1592819695396-064b9572a660?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+    z-index: 0;
+   
+}
+
+.banner .frase {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 1rem;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+     font-style: italic;
+    
+}
+
+
+// Footer
+
+.footer{
+    margin-top: 4rem;
+
+    .header-footer{
+        height:30vh;
+        background-image: url('https://images.unsplash.com/photo-1661098942406-f946086d2030?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        
+         p{
+            font-family: $sans_font;
+            color: white;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 600;
+            padding-left: 1rem;
+         }
+         input{
+            width: 70%;
+            padding: 5px;
+            border: none;
+            &::placeholder{
+                letter-spacing: 2px;
+                font-size: 10px;
+
+            }
+               
+         }
+
+         button{
+            margin-left: 5px;
+            border: white solid;
+            background-color: $amarillo;
+            padding: 4px 20px;
+            border-radius: 6px;
+
+         }
+    }
+
+    .footer-foot{
+        padding-top: 2rem;
+        background-color: ;
+    }
+}
