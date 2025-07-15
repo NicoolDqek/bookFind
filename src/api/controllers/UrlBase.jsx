@@ -3,7 +3,7 @@
 import axios from 'axios'
 
 const UrlBase= axios.create({
- baseURL: 'https://openlibrary.org/',
+ baseURL: 'http://localhost:5173',
   headers: {
     'Content-Type': 'application/json'
   }

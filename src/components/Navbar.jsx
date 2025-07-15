@@ -1,44 +1,50 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div>
-   <nav class="p-2  navbar-expand-lg ">
-  <div class="container-fluid navbar d-flex justify-content-between align-items-center">
-    
-     <div className='search'><form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search...." aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form></div>
-    
-    
-    <div className='link-navbar'><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
- 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Books</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Autors</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Genders</a>
-        </li>
-         
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">List</a>
-        </li>
-      </ul>
-    </div></div>
-    
+    <nav className="navbar navbar-expand-lg bg-light p-2">
+      <div className="container-fluid">
+        {/* Formulario de búsqueda a la izquierda */}
+        <form className="d-flex me-auto" role="search">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <button className="btn btn-outline-success" type="submit">Search</button>
+        </form>
 
-  </div>
-</nav>
+        {/* Botón de colapso en móviles */}
+        <button
+          className="navbar-toggler ms-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    </div>
+        {/* Links a la derecha */}
+        <div className="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul className="navbar-nav mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link" to="/books">Books</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/autors">Autors</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/genders">Genders</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   )
 }
 

@@ -13,17 +13,17 @@ function Footer() {
             </div>
         </div>
         <div className="row footer-foot">
-            <div className="col">
-                <h2>BooksFind</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid reprehenderit, vel placea </p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <div className="col-lg-3 col-md-3 col-sm-12 brand">
+                <h2>BooksFinder</h2>
+                <p>BooksFind is a collaborative space where readers explore, share, and discover knowledge about books, authors, and literary genres from around the world. </p>
+                <ul className='redes'>
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
                 </ul>
             </div>
-            <div className="col">
+            <div className="col-lg-2 col-md-2 col-sm-6">
                 <ul>
                     <li><b>About</b></li>
                     <li>About Us</li>
@@ -32,7 +32,7 @@ function Footer() {
                     
                 </ul>
             </div>
-            <div className="col">
+            <div className="col-lg-2 col-md-2 col-sm-6">
                 <ul>
                     <li><b>Help</b></li>
                     <li>FAQ</li>
@@ -41,7 +41,7 @@ function Footer() {
                     
                 </ul>
             </div>
-            <div className="col">
+            <div className="col-lg-2 col-md-2 col-sm-6">
                 <ul>
                     <li><b>Policies</b></li>
                <li>Privacy Policy</li>
@@ -50,10 +50,10 @@ function Footer() {
                   <li>Content Guidelines</li>
                 </ul>
             </div>
-            <div className="col">
+            <div className="col-lg-2 col-md-2 col-sm-6">
                    <ul>
   <li><b>Contact</b></li>
-  <li>Email: support@booksfind.org</li>
+  <li>Email: <b>support@booksfind.org</b></li>
   <li>Help Center</li>
   <li>Report an Issue</li>
   <li>Feedback Form</li>

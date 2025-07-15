@@ -117,8 +117,34 @@ p{
     background-size: cover;
     height: 60vh;
     border-radius: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-   
+.header-info{
+    margin-right: 10%;
+}
+    h5{
+        color: white;
+        font-family: $abril-font;
+        letter-spacing: 2px;
+    }
+
+    p{
+        color: white;
+        letter-spacing: 3px;
+        line-height: 2rem;
+         
+    }
+    .btn{
+        color: black;
+        background-color: $rosa;
+        font-family: $sans_font;
+        letter-spacing: 3px;
+
+
+    }
+    
 }
 
 // gender section
@@ -261,10 +287,60 @@ p{
             border-radius: 6px;
 
          }
+         
     }
 
     .footer-foot{
-        padding-top: 2rem;
-        background-color: ;
+        padding: 2rem;
+        background-color:$piel;
+      
+      .brand{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+        h2{
+            font-family: $abril-font;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+       
+        p{
+            text-align: center;
+            padding: .5rem;
+        }
+        .redes{
+            display: flex;
+             
+            
+
+            i{
+                
+                font-size: 20px;
+                color: white;
+                background-color: black;
+                padding: 5px;
+                border-radius:50%;
+                margin-left: 4px;
+
+            }
+        }
+
+        ul{
+            list-style: none;
+            
+            li{
+                line-height: 30px;
+                font-family: $sans_font;
+                letter-spacing: 3px;
+            }
+        }
+
+
+
+
+        
     }
 }

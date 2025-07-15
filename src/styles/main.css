@@ -95,6 +95,28 @@
   background-size: cover;
   height: 60vh;
   border-radius: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .header-info {
+  margin-right: 10%;
+}
+.header h5 {
+  color: white;
+  font-family: "Abril Fatface";
+  letter-spacing: 2px;
+}
+.header p {
+  color: white;
+  letter-spacing: 3px;
+  line-height: 2rem;
+}
+.header .btn {
+  color: black;
+  background-color: #FBE3E9;
+  font-family: "Open Sans";
+  letter-spacing: 3px;
 }
 
 .genders {
@@ -218,5 +240,131 @@
   border-radius: 6px;
 }
 .footer .footer-foot {
-  padding-top: 2rem;
+  padding: 2rem;
+  background-color: #F8D6C6;
+}
+.footer .footer-foot .brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-foot h2 {
+  font-family: "Abril Fatface";
+  letter-spacing: 3px;
+  text-align: center;
+}
+.footer .footer-foot p {
+  text-align: center;
+  padding: 0.5rem;
+}
+.footer .footer-foot .redes {
+  display: flex;
+}
+.footer .footer-foot .redes i {
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+.footer .footer-foot ul {
+  list-style: none;
+}
+.footer .footer-foot ul li {
+  line-height: 30px;
+  font-family: "Open Sans";
+  letter-spacing: 3px;
+}
+
+.bi-house {
+  background-color: #2DA1FF;
+  display: block;
+  padding: 0 1rem;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+
+.bookDetails {
+  height: auto;
+  background-color: #2DA1FF;
+}
+.bookDetails .img-g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+.bookDetails .img-carrusel {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+}
+.bookDetails .b-galeia {
+  border: none;
+  background-color: #2DA1FF;
+  padding-bottom: 1rem;
+}
+.bookDetails .b-galeia i {
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+.bookDetails .b-galeia i:hover {
+  color: white;
+}
+.bookDetails .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bookDetails .info h2, .bookDetails .info h5 {
+  color: white;
+  font-family: "Abril Fatface";
+  letter-spacing: 3px;
+}
+.bookDetails .info h6 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Open Sans";
+  color: white;
+  padding-top: 1rem;
+}
+
+.section_books {
+  padding-bottom: 2rem;
+}
+
+.card-relate {
+  text-align: center;
+  width: 150px;
+  height: 300px;
+}
+.card-relate img {
+  border-radius: 10px;
+  height: 200px;
+}
+.card-relate h5 {
+  font-size: 15px;
+  font-family: "Abril Fatface";
+}
+
+.about .description {
+  display: flex;
+  justify-content: center;
+}
+.about .description h6 {
+  font-size: 20px;
+  font-family: "Abril Fatface";
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 1rem;
+}
+.about .description p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@ function BookSection() {
          <h1>Books ShowCase</h1>
           <div className="row ">
           {BookSection.slice(6,12).map(b=>(
-               <BookCard book={b}/>    
+               <BookCard book={b} key={b.key}/>    
           ))}  
           
 
