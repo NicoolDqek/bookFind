@@ -3,6 +3,8 @@ import UrlBase from "./UrlBase"
 
 
 export const getBooks=async ()=>{
+
+
     try {
         const res= await UrlBase.get('/api/subjects/fantasy.json?limit=20')
         return res.data.works
@@ -40,7 +42,7 @@ export const relateBooks=async(autor)=>{
 
 
     try {
-       const res= await UrlBase.get(`/api/authors/${autor}/works.json?limit=10`)
+       const res= await UrlBase.get(`/api/authors/${autor}/works.json?limit=20`)
        const works = res.data.entries;
 const detailedBooks = await Promise.all(
   works.map(work => getInfo(work.key.split('/').pop()))
@@ -54,3 +56,30 @@ const detailedBooks = await Promise.all(
 }
 
 
+
+export const getGender=async(genero)=>{
+    try {
+        const res=await UrlBase.get(`/api/subjects/${genero}.json?limit=4`)
+        const gender= res.data
+        return gender
+    } catch (error) {
+        console.log('error al encontrar id de genero ingresada',error)
+        throw new Error('Error al obtener información del libro')
+    }
+}
+
+
+
+export const searchBar=async(titulo)=>{
+    if(titulo){
+       try {
+       const res= await UrlBase.get(`/api/search.json?title=${encodeURIComponent(titulo)}&limit=10`) 
+       return res.data.docs
+    } catch (error) {
+        console.error('error de busqueda')
+    }  
+    }else{
+        console.log('parametro no encontrada')
+    }
+    
+}

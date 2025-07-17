@@ -6,6 +6,7 @@ import BooksPage from './pages/BooksPage'
 import AutorsPage from './pages/AutorsPage'
 import GenderPage from './pages/GenderPage'
 import InfoPage from './pages/InfoPage'
+import ResultPage from './pages/ResultPage'
 function App() {
   
 
@@ -17,6 +18,8 @@ function App() {
       <Route path='/autors' element={<AutorsPage/>}></Route>
       <Route path='/genders' element={<GenderPage/>}></Route>
       <Route path='/books/:id' element={<InfoPage/>}></Route>
+      <Route path="/resultpage" element={<ResultPage />} />
+
       
         </Routes>
     </>

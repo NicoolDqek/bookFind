@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { searchBar } from '../api/controllers/CallFunctions'
+import { ContextGlobal } from '../api/context/GlobalContext'
 
 function Navbar() {
+ const {busqueda,buscar,handleSubmit}=useContext(ContextGlobal)
   return (
     <nav className="navbar navbar-expand-lg bg-light p-2">
       <div className="container-fluid">
-        {/* Formulario de búsqueda a la izquierda */}
-        <form className="d-flex me-auto" role="search">
+     
+        <form onSubmit={handleSubmit} className="d-flex me-auto" role="search">
           <input
             className="form-control me-2"
+            value={buscar}
             type="search"
             placeholder="Search..."
             aria-label="Search"
+            onChange={(e)=>busqueda(e)}
           />
           <button className="btn btn-outline-success" type="submit">Search</button>
         </form>
 
-        {/* Botón de colapso en móviles */}
+       
         <button
           className="navbar-toggler ms-2"
           type="button"
@@ -36,11 +41,9 @@ function Navbar() {
               <Link className="nav-link" to="/books">Books</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/autors">Autors</Link>
+              <Link className="nav-link" to="/">BOOKFIND</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/genders">Genders</Link>
-            </li>
+          
           </ul>
         </div>
       </div>

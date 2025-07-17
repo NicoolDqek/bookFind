@@ -17,10 +17,10 @@ function Footer() {
                 <h2>BooksFinder</h2>
                 <p>BooksFind is a collaborative space where readers explore, share, and discover knowledge about books, authors, and literary genres from around the world. </p>
                 <ul className='redes'>
-                    <i class="bi bi-github"></i>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-whatsapp"></i>
-                    <i class="bi bi-envelope-at-fill"></i>
+                    <i className="bi bi-github"></i>
+                    <i className="bi bi-facebook"></i>
+                    <i className="bi bi-whatsapp"></i>
+                    <i className="bi bi-envelope-at-fill"></i>
                 </ul>
             </div>
             <div className="col-lg-2 col-md-2 col-sm-6">

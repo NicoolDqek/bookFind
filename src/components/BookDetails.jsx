@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getInfo, relateBooks} from '../api/controllers/CallFunctions'
-import BookSection from '../layout/BookSection'
+
  
 function BookDetails() {
 const [book,setBook]=useState(null)
 const {id}=useParams()
 const [imgActual,setImgActual]=useState(0)
-const [relate,setRelate]=useState([])
+const [relate,setRelate]=useState(null)
 
 
 
@@ -56,7 +56,7 @@ if (!book) return <p>Cargando....</p>
 
 
 
-if(!relate)return <p>Cargando....</p>
+
   return (
     <div>
         <Link to={'/'}><i class="bi bi-house">Home</i></Link>
@@ -109,8 +109,8 @@ if(!relate)return <p>Cargando....</p>
          <div  className='section_books container-fluid'>
          <h1>Books Relates</h1>
           <div className="row">
-         {relate
-  .filter(libro => libro.covers && libro.covers.length > 0)
+         {relate ?(
+  relate.filter(libro => libro.covers && libro.covers.length > 0)
   .map((libro, index) => (
   <div className='card-relate col-lg-3 col-sm-6 col-12'  key={index}>
    <Link to={`/books/${libro.key.split('/').pop()}`}>
@@ -119,14 +119,14 @@ if(!relate)return <p>Cargando....</p>
     <p><b>Autor:</b>{libro.authorName}</p>
     
   </div>
-))}
-
-
-
-        </div>
-      
+))):(
+  <div className='d-flex align-items-center justify-content-center'>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2x1bGMybGM2ZHVlbHF0Y2FmaXVkMHFvZ3pseWdoaDJrZm5lb3E3ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2nciPKoj5DerEKmEq9/giphy.gif" alt="" style={{width:"100px",height:"100px"}} />
+    <p style={{fontSize:'18px'}}>cargando....</p>
+  </div>
+)}
+ </div>
     </div>
-
         </div>
     </div>
 </div>

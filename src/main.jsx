@@ -6,10 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 import GlobalContext from './api/context/GlobalContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-   <GlobalContext>
+   
     <BrowserRouter>
-    <App />
-    </BrowserRouter>
+    <GlobalContext>
+    <App /> 
     </GlobalContext>
+    </BrowserRouter>
+   
   
 )

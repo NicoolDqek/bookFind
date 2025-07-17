@@ -10,7 +10,7 @@ function BookCard({ book }) {
   const [bookDetail,setDetailedBook]=useState(null)
   const title = book.title;
   const author = book.authors?.[0]?.name || 'Autor desconocido';
-  const coverId = book.cover_id;
+  const coverId = book.cover_i || book.cover_id;
   const imageUrl = coverId
     ? `https://covers.openlibrary.org/b/id/${coverId}-M.jpg`
     : 'https://via.placeholder.com/150x200?text=No+Cover';
